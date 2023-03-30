@@ -19,7 +19,7 @@ body{
 }
 
 .main-wrapper{
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,7 @@ body{
 
 
 .container{
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -63,4 +64,34 @@ button{
   transform: translate(-50%, -50%);
   z-index: 100;
   cursor: pointer;
+}
+
+.bomb{
+  background-color: brown !important;
+}
+
+
+.disable{
+  pointer-events: none;
+}
+
+#reset{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 50px;
+  background-color: #E9E9ED;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  z-index: 10;
+}
+#score{
+  margin-top: 25px;
+  text-align: center;
 }

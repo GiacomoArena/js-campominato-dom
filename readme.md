@@ -10,4 +10,6 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
 
  - Copiare la struttura della repo precedente e aggiungere gli elementi richiesti per completare il gioco 
 
+- creo un ciclo for da i = 0   a i < 16 e genero tramite la funzione createsquare() lo "squareBomba" 
+
  
