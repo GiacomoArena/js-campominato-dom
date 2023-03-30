@@ -16,7 +16,7 @@ let points = 0
 container.classList.add('hide')
 reset.classList.add('hide')
 score.classList.add('hide')
-
+//click start button
 startButton.addEventListener('click', function(){
   
   if(container.classList.contains('hide')) {

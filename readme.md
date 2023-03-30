@@ -11,5 +11,27 @@ Al termine della partita il software deve comunicare il punteggio, cioè il nume
  - Copiare la struttura della repo precedente e aggiungere gli elementi richiesti per completare il gioco 
 
 - creo un ciclo for da i = 0   a i < 16 e genero tramite la funzione createsquare() lo "squareBomba" 
+```
+for (let i = 0; i < 16;  i++) {
+  let randomNum = uniqueRandomNum(generatedNumbers, 100, 1);
+  squareBomb[i] = createSquare(randomNum);
+```
+
+- creo un addevenlistener che al click dello square mi aggiungerá la classe bomb ed un fontawesome, attraverso l'utilizzo di .replaceChild() sostituisco a square[randomNum] le mie squareBomb[i]
+
+- al click dello squareBomb verrá generato un messaggio di alert per farci sapere che abbiamo terminato la partita e anche un riepilogo dello score, inoltre verrá aggiunta la classe disable al container per impedirne il click tramite un pointer-events: none
+```
+squareBomb[i].addEventListener('click', function(){
+    score.innerHTML = `Loser With : ${points} Points`;
+    squareBomb[i].innerHTML = '<i class="fa-solid fa-bomb"></i>';
+    squareBomb[i].classList.add('bomb');
+    container.classList.add('disable')
+    alert("YOU LOSER!");
+  })
+```
+
+- creo una variabile points che ad ogni click di square aumenterá il suo valore di 1, stampo sullo schermo il risultato ottenuto con un innerHTML
+
+- creo il pulsante reset che mi aggiornerá la pagina per poi poter ricominciare
 
  
