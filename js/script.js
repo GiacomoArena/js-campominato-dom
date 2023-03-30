@@ -93,9 +93,6 @@ for (let i = 0; i < 16;  i++) {
     alert("YOU LOSER!");
   })
 
-  container.replaceChild(squareBomb[i], square[randomNum]);
-
-  
-  
+  container.replaceChild(squareBomb[i], square[randomNum]) 
 }
 }
